@@ -192,6 +192,11 @@ section {
   padding: 0 0 20px;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 .btn {
   background: #11cdd4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#11cdd4), to(#11999e));
@@ -211,6 +216,25 @@ section {
   text-decoration: none;
 }
 
+.btn-details {
+  background: #11cdd4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#11cdd4), to(#11999e));
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  border-radius: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn-details:hover {
+  background: #30e3cb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#30e3cb), to(#2bc4ad));
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
 .bottom-container {
   padding: 50px 0 20px;
 }
@@ -218,6 +242,10 @@ section {
 .footer-link, .copyright {
   color: #cccccc;
   padding: 0 10px;
+}
+
+.footer-link:hover {
+  color: #30e3cb;
 }
 
 @media only screen and (min-width: 800px) {
@@ -247,8 +275,8 @@ section {
   .skills-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    /* -ms-grid-columns: (auto)[3]; */
+    grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
   }
   .portfolio {
@@ -342,6 +370,11 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
+  .featured > img {
+    width: 100%;
+    height: auto;
+    padding-left: 3%;
+  }
 }
 
 @media only screen and (min-width: 1550px) {
@@ -352,10 +385,24 @@ section {
     padding: 2em 20em 2em 0;
   }
   section {
-    padding: 20em 10em 4em 20em;
+    padding: 5em 10em 4em 20em;
   }
   .hero .content {
     padding: 6em 8em 6em 20em;
+  }
+  .featured > img {
+    width: 100%;
+    height: auto;
+    padding-left: 3%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .featured > img {
+    width: 75%;
+    height: auto;
+    padding-left: 15%;
+    padding-bottom: 5%;
   }
 }
 
