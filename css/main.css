@@ -131,6 +131,10 @@ section {
   font-weight: 500;
 }
 
+.featured-img {
+  border-radius: 10px;
+}
+
 .skills {
   background: #ff64cb;
 }
